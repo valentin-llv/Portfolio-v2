@@ -4,13 +4,75 @@
     <title> Valentin Le Lièvre - Portfolio </title>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.7">
 
     <link rel="stylesheet" href="css/compiled/global.css">
 
     <script src="js/compiled/global.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p> Hellow world </p>
+    <!-- Loading page -->
+    <div class="loading-page absolute w-full h-full bg-900 z-10">
+
+        <div class="loading-text absolute text-8xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <p> Hi 👋 </p>
+        </div>
+
+        <!-- Bottom loading animation -->
+        <div class="absolute top-full left-1/2 -translate-x-1/2 -translate-y-full -mt-20">
+            <svg class="loading-svg relative" width="125" height="125" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+                <path d="M98.8564 168.4C97.1764 169.84 94.5364 171.1 90.9364 172.18C87.4564 173.26 83.6164 173.8 79.4164 173.8C74.3764 173.8 70.0564 173.08 66.4564 171.64C62.8564 170.08 60.3964 167.98 59.0764 165.34C57.7564 162.58 56.1364 159.04 54.2164 154.72C52.2964 150.28 50.2564 145.36 48.0964 139.96C46.0564 134.56 43.8964 128.86 41.6164 122.86C39.4564 116.74 37.3564 110.56 35.3164 104.32C33.2764 98.08 31.3564 91.96 29.5564 85.96C27.7564 79.96 26.1964 74.32 24.8764 69.04C26.5564 67.36 28.9564 65.86 32.0764 64.54C35.3164 63.1 38.7364 62.38 42.3364 62.38C46.7764 62.38 50.3764 63.34 53.1364 65.26C56.0164 67.06 58.1164 70.48 59.4364 75.52C62.6764 87.28 65.9164 98.56 69.1564 109.36C72.5164 120.04 75.9964 131.2 79.5964 142.84H80.6764C83.9164 131.56 87.2164 119.26 90.5764 105.94C94.0564 92.62 97.3564 79.36 100.476 66.16C102.636 65.08 104.916 64.18 107.316 63.46C109.836 62.74 112.656 62.38 115.776 62.38C120.216 62.38 123.996 63.4 127.116 65.44C130.236 67.36 131.796 70.6 131.796 75.16C131.796 77.8 131.136 81.64 129.816 86.68C128.616 91.72 126.996 97.42 124.956 103.78C123.036 110.02 120.816 116.56 118.296 123.4C115.896 130.24 113.436 136.72 110.916 142.84C108.516 148.84 106.236 154.18 104.076 158.86C101.916 163.42 100.176 166.6 98.8564 168.4ZM164.338 172.54C159.178 172.54 155.098 171.04 152.098 168.04C149.098 165.04 147.598 160.96 147.598 155.8V62.74C148.918 62.5 151.018 62.2 153.898 61.84C156.778 61.36 159.538 61.12 162.178 61.12C164.938 61.12 167.338 61.36 169.378 61.84C171.538 62.2 173.338 62.92 174.778 64C176.218 65.08 177.298 66.58 178.018 68.5C178.738 70.42 179.098 72.94 179.098 76.06V147.16H220.318C221.158 148.48 221.938 150.28 222.658 152.56C223.378 154.72 223.738 157 223.738 159.4C223.738 164.2 222.718 167.62 220.678 169.66C218.638 171.58 215.938 172.54 212.578 172.54H164.338Z"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Home page -->
+    <div class="absolute z-0 w-full">
+        <div class="absolute mt-7 ml-7">
+            <svg class="relative" width="70" height="70" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+                <path d="M98.8564 168.4C97.1764 169.84 94.5364 171.1 90.9364 172.18C87.4564 173.26 83.6164 173.8 79.4164 173.8C74.3764 173.8 70.0564 173.08 66.4564 171.64C62.8564 170.08 60.3964 167.98 59.0764 165.34C57.7564 162.58 56.1364 159.04 54.2164 154.72C52.2964 150.28 50.2564 145.36 48.0964 139.96C46.0564 134.56 43.8964 128.86 41.6164 122.86C39.4564 116.74 37.3564 110.56 35.3164 104.32C33.2764 98.08 31.3564 91.96 29.5564 85.96C27.7564 79.96 26.1964 74.32 24.8764 69.04C26.5564 67.36 28.9564 65.86 32.0764 64.54C35.3164 63.1 38.7364 62.38 42.3364 62.38C46.7764 62.38 50.3764 63.34 53.1364 65.26C56.0164 67.06 58.1164 70.48 59.4364 75.52C62.6764 87.28 65.9164 98.56 69.1564 109.36C72.5164 120.04 75.9964 131.2 79.5964 142.84H80.6764C83.9164 131.56 87.2164 119.26 90.5764 105.94C94.0564 92.62 97.3564 79.36 100.476 66.16C102.636 65.08 104.916 64.18 107.316 63.46C109.836 62.74 112.656 62.38 115.776 62.38C120.216 62.38 123.996 63.4 127.116 65.44C130.236 67.36 131.796 70.6 131.796 75.16C131.796 77.8 131.136 81.64 129.816 86.68C128.616 91.72 126.996 97.42 124.956 103.78C123.036 110.02 120.816 116.56 118.296 123.4C115.896 130.24 113.436 136.72 110.916 142.84C108.516 148.84 106.236 154.18 104.076 158.86C101.916 163.42 100.176 166.6 98.8564 168.4ZM164.338 172.54C159.178 172.54 155.098 171.04 152.098 168.04C149.098 165.04 147.598 160.96 147.598 155.8V62.74C148.918 62.5 151.018 62.2 153.898 61.84C156.778 61.36 159.538 61.12 162.178 61.12C164.938 61.12 167.338 61.36 169.378 61.84C171.538 62.2 173.338 62.92 174.778 64C176.218 65.08 177.298 66.58 178.018 68.5C178.738 70.42 179.098 72.94 179.098 76.06V147.16H220.318C221.158 148.48 221.938 150.28 222.658 152.56C223.378 154.72 223.738 157 223.738 159.4C223.738 164.2 222.718 167.62 220.678 169.66C218.638 171.58 215.938 172.54 212.578 172.54H164.338Z" fill="var(--color-accent)" stroke="none"/>
+            </svg>
+        </div>
+
+        <div class="relative text-6xl md:text-8xl mt-72 text-center">
+            <p> Hi 👋 </p>
+
+            <h1 class="mt-8"> I'm <span class="color-accent"> Valentin Le&nbsp;Lièvre </span> </h1>
+        </div>
+
+        <!-- Hook text -->
+        <div class="max-w-3xl text-justify md:text-left md:max-w-screen-sm xl:max-w-screen-md mt-24 md:mt-32 m-auto">
+            <p class="text-4xl md:text-3xl ml-14 mr-14">
+                I'm a computer science student at Polytech Tours, in France. I use my free time to create apps that helps people around me.
+                I'm currently working on an app to get my <a href="#"> school timetable on smartphone </a>.
+            </p>
+        </div>
+
+        <!-- Check projects -->
+        <div class="mt-40 md:mt-32 text-center">
+            <a class="p-7 border-2 border-accent rounded-lg text-4xl md:text-3xl" href="" style="text-decoration: none;"> Check my projects </a>
+        </div>
+
+        <!-- Arrows -->
+        <div class="mt-40 md:mt-32 cursor-pointer">
+            <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                <path fill="none" stroke="var(--color-100)" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/>
+            </svg>
+
+            <svg class="m-auto -mt-7" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                <path fill="none" stroke="var(--color-100)" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/>
+            </svg>
+        </div>
+
+        <!-- Copyright -->
+        <!-- <div class="relative mt-8 mb-10 text-center">
+            <p class="text-2xl color-200"> Crée par Valentin Le Lièvre - 2022 </p>
+            <p class="text-2xl mt-2"> <a target="_blank" href="https://github.com/valentin-llv/Portfolio/"> View project on GitHub </a> </p>
+        </div> -->
+    </div>
 </body>
-</html>
+</html>  
