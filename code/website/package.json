@@ -6,8 +6,8 @@
   },
   "scripts": {
     "start": "concurrently \"npm run start:css\" \"tsc\"",
-    "start:css": "npx tailwindcss -i ./src/global/css/global.css -o ./src/compiled/compiled.css --watch",
+    "start:css": "npx tailwindcss -i ./src/css/handwrite/global.css -o ./src/css/compiled/global.css --watch",
     "build": "npm run build:css && tsc",
-    "build:css": "npx tailwindcss -i ./src/global/css/global.css -o ./src/compiled/compiled.css --minify"
+    "build:css": "npx tailwindcss -i ./src/css/handwrite/global.css -o ./src/css/compiled/global.css --minify"
   }
 }
