@@ -6,6 +6,7 @@
 
 :root {
     font-size: 11.2px;
+    scroll-behavior: smooth;
 }
 
 /* Root variables */
@@ -28,6 +29,10 @@ body {
     font-family: "Poppins", sans-serif;
     overscroll-behavior-y: contain;
     background-color: var(--color-900);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: auto;
 }
 
 /* General style */
@@ -59,12 +64,28 @@ a {
     background-color: var(--color-900);
 }
 
+.bg-800 {
+    background-color: var(--color-800);
+}
+
 .border-accent {
     border-color: var(--color-accent);
 }
 
+.border-100 {
+    border-color: var(--color-100);
+}
+
+.fill-100 {
+    fill: var(--color-100);
+}
+
 .color-accent {
     color: var(--color-accent);
+}
+
+.color-100 {
+    color: var(--color-100);
 }
 
 .color-200 {
@@ -79,7 +100,7 @@ a {
 
 @keyframes slide-up {
     0% { margin-top: 0px; }
-    100% { margin-top: 13rem; top: 0%; transform: translate(-50%, -0%); }
+    100% { margin-top: 16rem; top: 0%; transform: translate(-50%, -0%); }
 }
 
 /* Loading page fade out animation */
@@ -93,8 +114,40 @@ a {
     100% { opacity: 0; z-index: 0; }
 }
 
+/* Check project button */
 
-/* Test */
+.check-project-button, .goto-arrows {
+    transform: translate(-0%, 80px);
+    animation: slide-in 0.5s ease 2.3s 1 normal forwards;
+}
+
+@keyframes slide-in {
+    0% { transform: translate(-0%, 80px); }
+    100% { transform: translate(-0%, 0px); }
+}
+
+.check-project-button:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 0%;
+    position: absolute;
+    background-color: var(--color-accent);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.check-project-button:hover:after {
+    height: 100%;
+    top: 0;
+}
+
+.check-project-button:hover a {
+    color: var(--color-100);
+}
+
+/* loading svg */
 
 .loading-svg {
     stroke-width: 5px;
@@ -113,4 +166,49 @@ a {
     0% { stroke-dashoffset: 700; stroke: var(--color-accent); }
     90% { stroke-dashoffset: 0; stroke: var(--color-accent);  fill: var(--color-700); }
     100% { stroke-dashoffset: 0; stroke: var(--color-accent); fill: var(--color-accent); }
+}
+
+/* Head logo appear animation */
+
+.head-logo, .read-in {
+    opacity: 0;
+    animation: fade-in 0.5s linear 3s 1 normal forwards;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Social svg */
+
+.social-svg:hover {
+    fill: var(--color-accent);
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-700);
+    border-radius: 10px;
+    border: 5px solid var(--color-900);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-600);
+}
+
+@media screen and (max-width: 1000px) { 
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 }
