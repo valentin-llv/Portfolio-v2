@@ -568,14 +568,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -584,8 +576,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .box-border {
@@ -869,8 +869,8 @@ a {
 /* Loading page fade out animation */
 
 .loading-page {
-  -webkit-animation: fade-out 0s ease 0s 1 normal forwards;
-          animation: fade-out 0s ease 0s 1 normal forwards;
+  -webkit-animation: fade-out 0.5s ease 2.4s 1 normal forwards;
+          animation: fade-out 0.5s ease 2.4s 1 normal forwards;
   /* set to 2.4s delay and 0.5s duration */
 }
 
@@ -1107,6 +1107,10 @@ a {
     margin-top: 3rem;
   }
 
+  .md\:mt-32 {
+    margin-top: 8rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1127,6 +1131,11 @@ a {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .md\:text-2xl {

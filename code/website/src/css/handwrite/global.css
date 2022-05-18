@@ -106,7 +106,7 @@ a {
 /* Loading page fade out animation */
 
 .loading-page {
-    animation: fade-out 0s ease 0s 1 normal forwards; /* set to 2.4s delay and 0.5s duration */
+    animation: fade-out 0.5s ease 2.4s 1 normal forwards; /* set to 2.4s delay and 0.5s duration */
 }
 
 @keyframes fade-out {
