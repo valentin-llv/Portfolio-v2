@@ -1,2 +1,5 @@
 website/node_modules
 website/package-lock.json
+
+website/src/css/compiled
+website/src/js/compiled
