@@ -68,8 +68,16 @@ a {
     background-color: var(--color-800);
 }
 
+.color-accent {
+    color: var(--color-accent);
+}
+
 .border-accent {
     border-color: var(--color-accent);
+}
+
+.color-100 {
+    color: var(--color-100);
 }
 
 .border-100 {
@@ -80,110 +88,8 @@ a {
     fill: var(--color-100);
 }
 
-.color-accent {
-    color: var(--color-accent);
-}
-
-.color-100 {
-    color: var(--color-100);
-}
-
 .color-200 {
     color: var(--color-200);
-}
-
-/* Home page text loading animation */
-
-.loading-text {
-    animation: slide-up 0.5s ease 2s 1 normal forwards;
-}
-
-@keyframes slide-up {
-    0% { margin-top: 0px; }
-    100% { margin-top: 16rem; top: 0%; transform: translate(-50%, -0%); }
-}
-
-/* Loading page fade out animation */
-
-.loading-page {
-    animation: fade-out 0.5s ease 2.4s 1 normal forwards; /* set to 2.4s delay and 0.5s duration */
-}
-
-@keyframes fade-out {
-    0% { opacity: 1; }
-    100% { opacity: 0; z-index: 0; }
-}
-
-/* Check project button */
-
-.check-project-button, .goto-arrows {
-    transform: translate(-0%, 80px);
-    animation: slide-in 0.5s ease 2.3s 1 normal forwards;
-}
-
-@keyframes slide-in {
-    0% { transform: translate(-0%, 80px); }
-    100% { transform: translate(-0%, 0px); }
-}
-
-.check-project-button:after {
-    content: '';
-    width: 100%;
-    height: 0;
-    top: 100%;
-    left: 0%;
-    position: absolute;
-    background-color: var(--color-accent);
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.check-project-button:hover:after {
-    height: 100%;
-    top: 0;
-}
-
-.check-project-button:hover a {
-    color: var(--color-100);
-}
-
-/* loading svg */
-
-.loading-svg {
-    stroke-width: 5px;
-    stroke-dasharray: 700;
-    stroke-dashoffset: 0;
-    animation: appear 1s ease-in-out 0s 1 normal forwards, stroke-animation 2s ease-in 0s 1 normal forwards;
-    stroke: unset;
-}
-
-@keyframes appear {
-    0% { fill: var(--color-900); }
-    100% { fill: var(--color-700); }
-}
-
-@keyframes stroke-animation {
-    0% { stroke-dashoffset: 700; stroke: var(--color-accent); }
-    90% { stroke-dashoffset: 0; stroke: var(--color-accent);  fill: var(--color-700); }
-    100% { stroke-dashoffset: 0; stroke: var(--color-accent); fill: var(--color-accent); }
-}
-
-/* Head logo appear animation */
-
-.head-logo, .read-in {
-    opacity: 0;
-    animation: fade-in 0.5s linear 3s 1 normal forwards;
-}
-
-@keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Social svg */
-
-.social-svg:hover {
-    fill: var(--color-accent);
 }
 
 /* Scroll bar */
