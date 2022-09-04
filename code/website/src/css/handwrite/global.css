@@ -29,10 +29,8 @@ body {
     font-family: "Poppins", sans-serif;
     overscroll-behavior-y: contain;
     background-color: var(--color-900);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    overflow: auto;
+    color: var(--color-100);
+    overflow: hidden;
 }
 
 /* General style */
@@ -68,6 +66,10 @@ a {
     background-color: var(--color-800);
 }
 
+.bg-700 {
+    background-color: var(--color-700);
+}
+
 .color-accent {
     color: var(--color-accent);
 }
@@ -88,8 +90,69 @@ a {
     fill: var(--color-100);
 }
 
+.bg-100 {
+    background-color: var(--color-100);
+}
+
 .color-200 {
     color: var(--color-200);
+}
+
+/* Top menu */
+
+#top-menu {
+    /* background-color: #0b0e11BB;
+    backdrop-filter: blur(5px); */
+    background-color: var(--color-900);
+}
+
+/* Menu label animation */
+
+#menu-label div {
+    transition: transform 0.2s, margin-top 0.2s linear 0.2s, opacity 0.2s linear 0.2s;
+}
+
+/* Intro arrows link */
+
+#intro-arrows-link svg:nth-child(1) {
+    transition: margin-top 0.2s;
+}
+
+#intro-arrows-link:hover svg:nth-child(1) {
+    margin-top: 1rem;
+    transition: margin-top 0.2s linear 0.1s;
+}
+
+#intro-arrows-link:hover svg:nth-child(2) {
+    margin-top: 2.5rem;
+}
+
+:checked + #menu-label div {
+    transition: transform 0.2s linear 0.2s, margin-top 0.2s, opacity 0.2s;
+}
+
+:checked + #menu-label div:nth-child(1) {
+    margin-top: 2rem;
+    transform: rotate(-45deg);
+}
+
+:checked + #menu-label div:nth-child(2) {
+    opacity: 0;
+}
+
+:checked + #menu-label div:nth-child(3) {
+    margin-top: -1.6rem;
+    transform: rotate(45deg);
+}
+
+.mobileMenuOpen {
+    left: 0px;
+}
+
+/* Petite vue */
+
+[v-cloak] {
+    display: none;
 }
 
 /* Scroll bar */
@@ -116,5 +179,6 @@ a {
 @media screen and (max-width: 1000px) { 
     ::-webkit-scrollbar {
         width: 0px;
+        height: 0px;
     }
 }
