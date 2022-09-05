@@ -78,6 +78,10 @@ a {
     border-color: var(--color-accent);
 }
 
+.fill-accent {
+    fill: var(--color-accent);
+}
+
 .color-100 {
     color: var(--color-100);
 }
@@ -147,6 +151,13 @@ a {
 
 .mobileMenuOpen {
     left: 0px;
+}
+
+/* Socials svg */
+
+.social-svg:hover path {
+    transition: 0.2s;
+    fill: var(--color-accent);
 }
 
 /* Petite vue */
