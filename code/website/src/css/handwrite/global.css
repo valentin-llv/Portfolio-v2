@@ -30,7 +30,7 @@ body {
     overscroll-behavior-y: contain;
     background-color: var(--color-900);
     color: var(--color-100);
-    overflow: hidden;
+    overflow: hidden;       
 }
 
 /* General style */
@@ -102,13 +102,43 @@ a {
     color: var(--color-200);
 }
 
+/* Loader */
+
+.loading-svg {
+    stroke-width: 5px;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 0;
+    animation: appear 1s ease-in-out 0s 1 normal forwards, stroke-animation 2.1s ease-in 0s 1 normal forwards;
+    stroke: unset;
+}
+
+@keyframes appear {
+    0% { fill: var(--color-900); }
+    100% { fill: var(--color-700); }
+}
+
+@keyframes stroke-animation {
+    0% { stroke-dashoffset: 700; stroke: var(--color-accent); }
+    90% { stroke-dashoffset: 0; stroke: var(--color-accent);  fill: var(--color-700); }
+    100% { stroke-dashoffset: 0; stroke: var(--color-accent); fill: var(--color-accent); }
+}
+
+#loader {
+    animation: hide 0s ease-in-out 0s 1 normal forwards; /* 0.5s 2.2s */
+}
+
+@keyframes hide {
+    0% { opacity: 1; z-index: 50; }
+    99% { opacity: 0; z-index: 50; }
+    100% { opacity: 0; z-index: -1; }
+}
+
 /* Top menu */
 
-#top-menu {
-    /* background-color: #0b0e11BB;
-    backdrop-filter: blur(5px); */
-    background-color: var(--color-900);
-}
+/* #top-menu {
+    background-color: #0b0e11BB;
+    backdrop-filter: blur(5px);
+} */
 
 /* Menu label animation */
 
@@ -160,10 +190,133 @@ a {
     fill: var(--color-accent);
 }
 
+/* Appear animation */
+
+.fade-in-1 {
+    animation: fade-in 0s ease-in-out 0s 1 normal forwards; /* 0.5s 2.5s */
+    opacity: 0;
+}
+
+.fade-in-2 {
+    animation: fade-in 0s ease-in-out 0s 1 normal forwards; /* 0.5s 2.8s */
+    opacity: 0;
+}
+
+.fade-in-3 {
+    animation: fade-in 0s ease-in-out 0s 1 normal forwards; /* 0.5s 3.8s */
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.drop-21 {
+    transform: translate(0px, -15px);
+    opacity: 0;
+    animation: drop 0s ease-in-out 0s 1 normal forwards; /* 0.4s 2.9s */
+}
+
+.drop-22 {
+    transform: translate(0px, -15px);
+    opacity: 0;
+    animation: drop 0s ease-in-out 0s 1 normal forwards; /* 0.4s 3.2s */
+}
+
+.drop-23 {
+    transform: translate(0px, -15px);
+    opacity: 0;
+    animation: drop 0s ease-in-out 0s 1 normal forwards; /* 0.4s 3.5s */
+}
+
+.drop-31 {
+    transform: translate(0px, -15px);
+    opacity: 0;
+    animation: drop 0s ease-in-out 0s 1 normal forwards; /* 0.4s 4.5s */
+}
+
+.drop-32 {
+    transform: translate(0px, -15px);
+    opacity: 0;
+    animation: drop 0s ease-in-out 0s 1 normal forwards; /* 0.4s 4.2s */
+}
+
+.drop-33 {
+    transform: translate(0px, -15px);
+    opacity: 0;
+    animation: drop 0s ease-in-out 0s 1 normal forwards; /* 0.4s 3.9s */
+}
+
+@keyframes drop {
+    0% { transform: translate(0px, -15px); opacity: 0; }
+    100% { transform: translate(0px, -0px); opacity: 1; }
+}
+
+/* Top name easter egg */
+
+#top-name:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+#top-name:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+#top-name:after {
+    opacity: 0;
+    transition: 0.2s;
+    visibility: hidden;
+    content: "🐇";
+    position: absolute;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: var(--color-800);
+    margin-top: -100px;
+    margin-left: -185px;
+    font-size: 45px;
+}
+
+#top-name:before {
+    opacity: 0;
+    transition: 0.2s;
+    visibility: hidden;
+    content: "";
+    height: 0px;
+    width: 0px;
+    border: 20px solid transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: var(--color-800);
+    margin-left: 420px;
+    margin-top: -35px;
+    position: absolute;
+}
+
+@media screen and (max-width: 1062px) { 
+    #top-name:hover:after {
+        visibility: hidden;
+    }
+    
+    #top-name:hover:before {
+        visibility: hidden;
+    }
+}
+
 /* Petite vue */
 
 [v-cloak] {
     display: none;
+}
+
+/* Selection */
+
+::selection {
+    color: var(--color-100);
+    background: var(--color-accent);
 }
 
 /* Scroll bar */
