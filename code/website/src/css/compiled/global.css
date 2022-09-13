@@ -1158,8 +1158,8 @@ a {
 }
 
 #loader {
-  -webkit-animation: hide 0s ease-in-out 0s 1 normal forwards;
-          animation: hide 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: hide 0.5s ease-in-out 2.2s 1 normal forwards;
+          animation: hide 0.5s ease-in-out 2.2s 1 normal forwards;
   /* 0.5s 2.2s */
 }
 
@@ -1257,22 +1257,22 @@ a {
 /* Appear animation */
 
 .fade-in-1 {
-  -webkit-animation: fade-in 0s ease-in-out 0s 1 normal forwards;
-          animation: fade-in 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: fade-in 0.5s ease-in-out 2.5s 1 normal forwards;
+          animation: fade-in 0.5s ease-in-out 2.5s 1 normal forwards;
   /* 0.5s 2.5s */
   opacity: 0;
 }
 
 .fade-in-2 {
-  -webkit-animation: fade-in 0s ease-in-out 0s 1 normal forwards;
-          animation: fade-in 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: fade-in 0.5s ease-in-out 2.8s 1 normal forwards;
+          animation: fade-in 0.5s ease-in-out 2.8s 1 normal forwards;
   /* 0.5s 2.8s */
   opacity: 0;
 }
 
 .fade-in-3 {
-  -webkit-animation: fade-in 0s ease-in-out 0s 1 normal forwards;
-          animation: fade-in 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: fade-in 0.5s ease-in-out 3.5s 1 normal forwards;
+          animation: fade-in 0.5s ease-in-out 3.5s 1 normal forwards;
   /* 0.5s 3.8s */
   opacity: 0;
 }
@@ -1300,48 +1300,48 @@ a {
 .drop-21 {
   transform: translate(0px, -15px);
   opacity: 0;
-  -webkit-animation: drop 0s ease-in-out 0s 1 normal forwards;
-          animation: drop 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: drop 0.4s ease-in-out 2.9s 1 normal forwards;
+          animation: drop 0.4s ease-in-out 2.9s 1 normal forwards;
   /* 0.4s 2.9s */
 }
 
 .drop-22 {
   transform: translate(0px, -15px);
   opacity: 0;
-  -webkit-animation: drop 0s ease-in-out 0s 1 normal forwards;
-          animation: drop 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: drop 0.4s ease-in-out 3.2s 1 normal forwards;
+          animation: drop 0.4s ease-in-out 3.2s 1 normal forwards;
   /* 0.4s 3.2s */
 }
 
 .drop-23 {
   transform: translate(0px, -15px);
   opacity: 0;
-  -webkit-animation: drop 0s ease-in-out 0s 1 normal forwards;
-          animation: drop 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: drop 0.4s ease-in-out 3.2s 1 normal forwards;
+          animation: drop 0.4s ease-in-out 3.2s 1 normal forwards;
   /* 0.4s 3.5s */
 }
 
 .drop-31 {
   transform: translate(0px, -15px);
   opacity: 0;
-  -webkit-animation: drop 0s ease-in-out 0s 1 normal forwards;
-          animation: drop 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: drop 0.4s ease-in-out 4.2s 1 normal forwards;
+          animation: drop 0.4s ease-in-out 4.2s 1 normal forwards;
   /* 0.4s 4.5s */
 }
 
 .drop-32 {
   transform: translate(0px, -15px);
   opacity: 0;
-  -webkit-animation: drop 0s ease-in-out 0s 1 normal forwards;
-          animation: drop 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: drop 0.4s ease-in-out 3.9s 1 normal forwards;
+          animation: drop 0.4s ease-in-out 3.9s 1 normal forwards;
   /* 0.4s 4.2s */
 }
 
 .drop-33 {
   transform: translate(0px, -15px);
   opacity: 0;
-  -webkit-animation: drop 0s ease-in-out 0s 1 normal forwards;
-          animation: drop 0s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: drop 0.4s ease-in-out 3.6s 1 normal forwards;
+          animation: drop 0.4s ease-in-out 3.6s 1 normal forwards;
   /* 0.4s 3.9s */
 }
 
@@ -1474,6 +1474,10 @@ a {
 
 .hover\:mb-2:hover {
   margin-bottom: 0.5rem;
+}
+
+.hover\:mb-20:hover {
+  margin-bottom: 5rem;
 }
 
 .hover\:-translate-y-1:hover {
