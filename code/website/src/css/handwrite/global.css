@@ -203,7 +203,7 @@ a {
 }
 
 .fade-in-3 {
-    animation: fade-in 0.5s ease-in-out 3.5s 1 normal forwards; /* 0.5s 3.8s */
+    animation: fade-in 0.5s ease-in-out 3.8s 1 normal forwards; /* 0.5s 3.8s */
     opacity: 0;
 }
 
@@ -227,25 +227,25 @@ a {
 .drop-23 {
     transform: translate(0px, -15px);
     opacity: 0;
-    animation: drop 0.4s ease-in-out 3.2s 1 normal forwards; /* 0.4s 3.5s */
+    animation: drop 0.4s ease-in-out 3.5s 1 normal forwards; /* 0.4s 3.5s */
 }
 
 .drop-31 {
     transform: translate(0px, -15px);
     opacity: 0;
-    animation: drop 0.4s ease-in-out 4.2s 1 normal forwards; /* 0.4s 4.5s */
+    animation: drop 0.4s ease-in-out 4.5s 1 normal forwards; /* 0.4s 4.5s */
 }
 
 .drop-32 {
     transform: translate(0px, -15px);
     opacity: 0;
-    animation: drop 0.4s ease-in-out 3.9s 1 normal forwards; /* 0.4s 4.2s */
+    animation: drop 0.4s ease-in-out 4.2s 1 normal forwards; /* 0.4s 4.2s */
 }
 
 .drop-33 {
     transform: translate(0px, -15px);
     opacity: 0;
-    animation: drop 0.4s ease-in-out 3.6s 1 normal forwards; /* 0.4s 3.9s */
+    animation: drop 0.4s ease-in-out 3.9s 1 normal forwards; /* 0.4s 3.9s */
 }
 
 @keyframes drop {
