@@ -7,7 +7,7 @@
   "scripts": {
     "start": "concurrently \"npm run start:css\" \"tsc\"",
     "start:css": "npx tailwindcss -i ./src/css/handwrite/global.css -o ./src/css/compiled/global.css --watch",
-    "build": "npm run build:css && tsc",
+    "build": "npm run build:css && tsc --build",
     "build:css": "npx tailwindcss -i ./src/css/handwrite/global.css -o ./src/css/compiled/global.css --minify"
   }
 }
