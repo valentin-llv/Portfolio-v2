@@ -247,7 +247,7 @@ a {
     opacity: 0;
     animation: drop 0.4s ease-in-out 3.9s 1 normal forwards; /* 0.4s 3.9s */
 }
-  
+
 @keyframes drop {
     0% { transform: translate(0px, -15px); opacity: 0; }
     100% { transform: translate(0px, -0px); opacity: 1; }
