@@ -1,5 +1,4 @@
-website/node_modules
-website/package-lock.json
+node_modules
 
-website/src/css/compiled
-website/src/js/compiled
+src/css/compiled
+src/js/compiled
