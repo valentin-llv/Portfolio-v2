@@ -1,6 +1,6 @@
 # Valentin Le Lièvre - Personnal portfolio
 
---> Note: this is an old repository, the newer version of my portfolio is available [here](https://github.com/valentin-llv/portfolio).
+**--> Note: this is an old repository, the newer version of my portfolio is available [here](https://github.com/valentin-llv/portfolio).**
 
 This is the source code of my portfolio. Fell free to take a look at the code if your interested in.
 
